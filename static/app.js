@@ -24,3 +24,27 @@ mouseOverContainer.onmousemove = function(e) {
     transformElement(ex1Layer, position);
   });
 };
+
+function handleStart(e) {
+  let xy = [e.clientX, e.clientY];
+  let position = xy.concat([ex1Layer]);
+
+  window.requestAnimationFrame(function(){
+    transformElement(ex1Layer, position);
+  });
+}
+
+function handleMove(e) {
+  let xy = [e.clientX, e.clientY];
+  let position = xy.concat([ex1Layer]);
+
+  window.requestAnimationFrame(function(){
+    transformElement(ex1Layer, position);
+  });
+}
+
+const b = document.querySelector("body");
+b.addEventListener("touchstart", handleStart);
+b.addEventListener("touchmove", handleMove);
+// b.addEventListener("touchend", handleEnd);
+// b.addEventListener("touchcancel", handleCancel);
