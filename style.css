@@ -12,6 +12,7 @@ html, body {
 
 body {
 	box-sizing: border-box;
+	position: relative;
 	overflow: hidden;
 }
 
