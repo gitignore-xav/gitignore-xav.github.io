@@ -26,7 +26,7 @@ mouseOverContainer.onmousemove = function(e) {
 };
 
 function handleStart(e) {
-  let xy = [e.clientX, e.clientY];
+  let xy = [e.touches[0].clientX, e.touches[0].clientY];
   let position = xy.concat([ex1Layer]);
 
   window.requestAnimationFrame(function(){
@@ -35,7 +35,7 @@ function handleStart(e) {
 }
 
 function handleMove(e) {
-  let xy = [e.clientX, e.clientY];
+  let xy = [e.touches[0].clientX, e.touches[0].clientY];
   let position = xy.concat([ex1Layer]);
 
   window.requestAnimationFrame(function(){

@@ -7,7 +7,12 @@ html, body {
 
 	overflow: hidden;
 
-	background: radial-gradient(circle, rgb(255, 171, 129) 0%, rgb(255, 255, 255) 100%);
+	background: radial-gradient(circle, rgb(255, 192, 161) 0%, rgb(255, 255, 255) 100%);
+}
+
+body {
+	box-sizing: border-box;
+	overflow: hidden;
 }
 
 .container {
@@ -21,7 +26,8 @@ html, body {
 }
 
 .box {
-	border: 2px solid red;
+	/* border: 2px solid red; */
+	box-sizing: border-box;
 	height: 100px;
 	width: 100px;
 	position: absolute;
@@ -31,5 +37,6 @@ img {
 	position: absolute;
 	translate: -50% -50%;
 
+	/* box-shadow: 0 0 0.4em rgb(255, 171, 129); */
 	/* display: none; */
 }
